@@ -1,8 +1,4 @@
 // Imports des images de projets
-import solidityImage from '@/assets/img/project-solidity.png?url'
-import fundingImage from '@/assets/img/Screenshot 2026-06-07 040339.png?url'
-import shopifyImage from '@/assets/img/project-shopify.png?url'
-import airtableImage from '@/assets/img/airtable-app.svg?url'
 import BlockchainIcon from '@/assets/icons/svg/blockchain.svg?react'
 import EthereumIcon from '@/assets/icons/svg/ethereum.svg?react'
 import SolidityIcon from '@/assets/icons/svg/solidity.svg?react'
@@ -25,7 +21,15 @@ import MySQLIcon from '@/assets/icons/svg/mysql-icon.svg?react'
 import SequelizeIcon from '@/assets/icons/svg/sequelize.svg?react'
 import APIIcon from '@/assets/icons/svg/api.svg?react'
 import FullStackIcon from '@/assets/icons/svg/full-stack.svg?react'
-const ecommerceImage = 'https://artdecorglass.co.uk/assets/hero-scene-DaxLSY1x.png'
+import imaginifyLogo from '@/assets/img/Screenshot 2026-06-17 232720.png?url'
+import novmuseraiLogo from '@/assets/img/Screenshot 2026-06-18 002202.png?url'
+import mainUILogo from '@/assets/img/main-ui (1).png?url'
+import solidityStorageLogo from '@/assets/img/Screenshot 2026-06-18 005547.png?url'
+
+const imaginifyImage = imaginifyLogo
+const novmuseraiImage = novmuseraiLogo
+const decentralizedFundingImage = mainUILogo
+const solidityStorageImage = solidityStorageLogo
 
 const GITHUB_BASE_URL = 'https://github.com/Oshima-921/'
 
@@ -60,53 +64,42 @@ export const technos = [
 
 export const projects = [
   {
-    name: 'Solidity Contract Storage',
-    summary: 'A secure Ethereum smart contract built with Solidity and Web3.js for storing and retrieving data on-chain, showcasing blockchain architecture and contract interaction.',
-    technos: ['Solidity', 'Smart Contracts', 'Blockchain', 'Ethereum', 'Web3.js'],
+    name: 'Imaginify',
+    summary: 'A refined AI-powered image enhancement platform built with Next.js and TypeScript, featuring a responsive TailwindCSS interface, seamless MongoDB-backed persistence, and a polished user experience for creative editing workflows.',
+    technos: ['Next.js', 'TypeScript', 'TailwindCSS', 'MongoDB', 'React.js', 'Web Development', 'Figma', 'API Integration'],
     url: {
-      icon: solidityImage,
-      github: gitUrlConstructor('Solidity-Contract-Storage'),
-      server: null
+      icon: imaginifyImage,
+      github: gitUrlConstructor('imaginify'),
+      server: 'https://ai-imaginify.netlify.app/'
     }
   },
   {
-    name: 'Decentralized Funding',
-    summary: 'A decentralized crowdfunding dApp using Ethereum smart contracts, enabling campaign creation, contributions, and transparent funding flows through Web3 integration.',
-    technos: ['Solidity', 'Smart Contracts', 'Blockchain', 'Ethereum', 'Web3.js', 'React.js', 'API Integration'],
+    name: 'NovmuserAI',
+    summary: 'A composed AI platform that emphasizes reliable model integration, stable API orchestration, and a maintainable full-stack architecture for consistent delivery.',
+    technos: ['TypeScript', 'Node.js', 'React.js', 'API Integration', 'Full Stack Development', 'Hugging Face API', 'OpenAI API', 'Self-trained Models'],
     url: {
-      icon: fundingImage,
+      icon: novmuseraiImage,
+      github: gitUrlConstructor('novmuserai'),
+      server: 'https://novmuserai.com/'
+    }
+  },
+  {
+    name: 'Decentralized Funding System',
+    summary: 'A decentralized crowdfunding DAO platform focused on secure smart contract funding flows, governance transparency, and a scalable full-stack deployment architecture.',
+    technos: ['Solidity', 'Ethereum', 'Smart Contracts', 'OpenZeppelin', 'Hardhat', 'Web3.js', 'TypeScript', 'Smart Contract Testing', 'Security & Audits'],
+    url: {
+      icon: decentralizedFundingImage,
       github: gitUrlConstructor('Decentralized-Funding'),
       server: 'https://crowdfundingdaoapp.vercel.app/'
     }
   },
   {
-    name: 'Shopify Preservation',
-    summary: 'A full-stack Shopify-oriented project combining React UI with Node.js backend APIs to preserve storefront data, improve product workflows, and support custom shop integrations.',
-    technos: ['React.js', 'JavaScript', 'Node.js', 'API Integration', 'Full Stack Development'],
+    name: 'Solidity-Contract Storage',
+    summary: 'A compact Solidity example showcasing secure contract storage patterns, audit-friendly structure, and integration-ready interfaces for decentralized applications.',
+    technos: ['Solidity', 'EVM', 'OpenZeppelin', 'Hardhat', 'Foundry', 'Smart Contracts', 'Web3.js', 'Testing', 'Security & Audits'],
     url: {
-      icon: shopifyImage,
-      github: gitUrlConstructor('shopify-preservation'),
-      server: 'https://pypi.org/project/shopifyapp/'
-    }
-  },
-  {
-    name: 'Airtable App',
-    summary: 'A custom Airtable integration app with API-driven record syncing, automation workflows, and a responsive dashboard for data management.',
-    technos: ['React.js', 'JavaScript', 'Node.js', 'API Integration', 'Full Stack Development'],
-    url: {
-      icon: airtableImage,
-      github: gitUrlConstructor('airtable-app'),
-      server: 'https://app.cesko.digital/'
-    }
-  },
-  {
-    name: 'Ecommerce Site',
-    summary: 'A modern full-stack e-commerce experience using React, Node.js, and MongoDB, with API-driven product management, cart handling, and responsive store interfaces.',
-    technos: ['React.js', 'JavaScript', 'Node.js', 'MongoDB', 'API Integration', 'Full Stack Development'],
-    url: {
-      icon: ecommerceImage,
-      github: gitUrlConstructor('ecommerce-site'),
-      server: null
+      icon: solidityStorageImage,
+      github: gitUrlConstructor('Solidity-Contract-Storage'),
     }
   }
 ]
