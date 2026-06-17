@@ -13,7 +13,7 @@ export type StackArray = StackType[]
 export interface ProjectURL {
   icon: string
   github: string
-  server: string | null
+  server?: string | null
 }
 
 export interface ProjectsType {
